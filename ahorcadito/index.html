@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ahorcadito.App_Juegos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+   
+</head>
+<body>
+    <main>
+        <h1>Ahorcadito</h1>
+        
+        <div id="game">
+            
+            <div id="gameContainer">
+                <p>Intentos restantes: <span id="counter"></span></p>
+                <div class="screen">
+                    <canvas id="canvas"></canvas>
+                    <!-- <div id="canvas"></div> -->
+                    <div id="word"></div>
+                </div>
+            </div>
+        
+            <div id="controls">
+                <div id="keyboard"></div>
+                <div id="menuContainer"></div>
+            </div>
+        </div>        
+
+        <div id="mainMenu" class="hidden"></div>
+        <button class="back" onclick=" back()" >Juegos</button>
+
+        
+    </main>
+
+    <script src="game.js" defer></script>
+    <script src="https://kit.fontawesome.com/af38a0daa9.js" crossorigin="anonymous"></script>
+</body>
+</html>

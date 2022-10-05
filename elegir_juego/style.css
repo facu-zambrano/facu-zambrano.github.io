@@ -1,0 +1,126 @@
+body{
+    margin: 0%;
+}
+
+
+.contes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: aquamarine;
+    height: 100vh;
+    
+}
+.left{
+    background: url(ahorcadito.gif) center ;
+    background-size: cover;
+    border-radius: 0.2rem;
+        
+}
+.right{ 
+    background: url(esto.gif) center;
+}
+
+.btn{
+    padding: 2.5rem 7rem;   
+    background-image: linear-gradient(to right, #b73c12, #b74c22, #b75a31, #b66741, #b57351);
+    border-color: rgb(182, 172, 144);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    transform: translate(230px,260px);
+}
+
+.btn::before{
+    content: "AHORCADITO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    font-size: 1.6rem;
+    color: rgb(221, 212, 212);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: 0.1rem .1rem .1rem rgb(172, 165, 165);
+    transition: 2s ease;
+}
+
+.btn::after{
+    content: "JUGAR";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    font-size: 2.6rem;
+    color: rgb(221, 212, 212);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: 0.1rem .1rem .1rem rgb(172, 165, 165);
+    transition: 2s ease;
+    opacity: 0;
+}
+
+.btn:hover::before{
+    transform: translate(-50%,-50%) scale(3);
+    opacity: 0;
+}
+
+.btn:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+
+
+.button{
+    padding: 2.5rem 7rem;   
+    background-image: linear-gradient(to left, #695149, #7c594c, #8f614e, #a26a50, #b57351);
+    border-color: rgb(182, 172, 144);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    transform: translate(230px,260px);
+}
+
+.button::before{
+    content: "MEMORIA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    font-size: 1.6rem;
+    color: rgb(221, 212, 212);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: 0.1rem .1rem .1rem rgb(172, 165, 165);
+    transition: 2s ease;
+}
+
+.button::after{
+    content: "JUGAR";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    font-size: 2.6rem;
+    color: rgb(221, 212, 212);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: 0.1rem .1rem .1rem rgb(172, 165, 165);
+    transition: 2s ease;
+    opacity: 0;
+}
+
+.button:hover::before{
+    transform: translate(-50%,-50%) scale(3);
+    opacity: 0;
+}
+
+.button:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}

@@ -1,0 +1,120 @@
+:root {
+    --w: calc(70vw / 6);
+    --h: calc(70vh / 4);
+}
+
+* {
+    transition: all 0.5s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-perspective: 1000;
+    background: rgb(218, 213, 155);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: calibri;
+}
+
+div {
+    display: inline-block;
+}
+
+.area-tarjeta,
+.tarjeta,
+.cara {
+    cursor: pointer;
+    width: var(--w);
+    min-width: 100px;
+    height: var(--h);
+}
+
+.tarjeta {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: iniciar 2s;
+    
+}
+
+.cara {
+    position: absolute;
+    backface-visibility: hidden;
+    font-size: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.trasera {
+    background-color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+}
+
+.superior {
+    background: linear-gradient(orange, darkorange);
+}
+
+.superior:hover{
+    background-color: antiquewhite;
+    border: 2px solid #ad7a7a;
+    color: rgb(0, 0, 0) ;
+}
+
+.nuevo-juego {
+    cursor: pointer;
+    background: linear-gradient(orange, darkorange);
+    padding: 20px;
+    border-radius: 10px;
+    border: white 1px solid;
+    font-size: 130%;
+    display: block;
+    font-weight: 700;
+}
+.nuevo-juego:hover{
+    background-color: antiquewhite;
+    border: 2px solid #ad7a7a;
+    color: rgb(0, 0, 0) ;
+
+}
+
+.juegos{
+    cursor: pointer;
+    background: linear-gradient(orange, darkorange);
+    padding: 20px;
+    border-radius: 10px;
+    border: white 1px solid;
+    font-size: 130%;
+    display: block;
+    font-weight: 700;
+}
+.juegos:hover{
+    background-color: antiquewhite;
+    border: 2px solid #ad7a7a;
+    color: rgb(0, 0, 0) ;
+
+}
+#puntos{
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 20px;
+}
+
+@keyframes iniciar {
+
+    20%,
+    90% {
+        transform: rotateY(180deg);
+    }
+
+    0%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
