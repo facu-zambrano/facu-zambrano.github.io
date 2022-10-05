@@ -1,4 +1,4 @@
-swal("!BIENVENIDO!","Inicia sesion o registrate para ingresar el juego...");
+swal("!BIENVENIDO!","Inicia sesion o registrate para ingresar a los juegos...");
 //Ejecutando funciones
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
